@@ -15,7 +15,7 @@ plt.rcParams['axes.unicode_minus'] = False
 
 class PensionData():
     def __init__(self, filepath):
-        self.df = pd.read_csv(os.path.join(filepath), encoding='cp949')
+        self.df = pd.read_csv(os.path.join(filepath), encoding='cp949',error_bad_lines=False)
         self.pattern1 = '(\([^)]+\))'
         self.pattern2 = '(\[[^)]+\])'
         self.pattern3 = '[^A-Za-z0-9가-힣]'
