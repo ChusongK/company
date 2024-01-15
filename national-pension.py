@@ -73,7 +73,7 @@ class PensionData():
 
 @st.cache
 def read_pensiondata():
-    data = PensionData('https://www.dropbox.com/scl/fi/4t2guzz346d8j92b9fwrm/national-pension.csv?rlkey=da3e6ur1sxyo1p5eq763v0nqw&dl=0')
+    data = PensionData('https://www.dropbox.com/scl/fi/xn2e2dylrkvxi7gsvo5bu/national-pension.csv?rlkey=n7ow55xgks8h8jet7744r99lq&dl=0')
     return data
 
 data = read_pensiondata()
